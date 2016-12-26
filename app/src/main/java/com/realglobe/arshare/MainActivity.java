@@ -1,10 +1,10 @@
 package com.realglobe.arshare;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     /* 背景画像 */
     private ImageTaskTimer imageTaskTimer;
@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 背景画像
         ImageView bgView = (ImageView) findViewById(R.id.shared_photo);
         this.imageTaskTimer = new ImageTaskTimer(bgView);
     }
